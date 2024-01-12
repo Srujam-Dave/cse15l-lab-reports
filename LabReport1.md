@@ -1,4 +1,4 @@
-Lab Report 1
+## Lab Report 1
 
 #1. The cd Command
 - No Arguments
