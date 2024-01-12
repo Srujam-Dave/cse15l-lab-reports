@@ -1,6 +1,6 @@
 ## Lab Report 1
 
-#1. The cd Command
+# 1. The cd Command
 - No Arguments
 ```
 [user@sahara ~/lecture1/messages]$ cd
@@ -26,7 +26,7 @@ Before the command was run, the working directory was /lecture1/messages. When t
 command is meant to take in a directory as an argument, but a file was written instead. This is an error - the cd command is meant to change the working directory, and the idea of changing the 
 working directory to a file is nonsensical. 
 
-#2. The ls command
+# 2. The ls command
 - No arguments
 ```
 [user@sahara ~/lecture1]$ ls
@@ -52,7 +52,7 @@ en-us.txt
 The current working directory was /lecture1/messages. The output is the name of the file that was entered as an argument. The ls command is supposed to behave this way when given a file name as 
 input. This is not an error. 
 
-#3. The cat command
+# 3. The cat command
 - No arguments
 ```
 [user@sahara ~/lecture1]$ cat
