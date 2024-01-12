@@ -72,6 +72,7 @@ The current working directory was /lecture1. The output was a message saying tha
 cat command is not supposed to concatenate the contents of an entire directory, and instead is meant to be used on individual files. 
 
 - File as an Argument
+
 ```
 [user@sahara ~/lecture1]$ cat Hello.java
 import java.io.IOException;
