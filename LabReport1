@@ -1,0 +1,29 @@
+##Lab Report 1
+
+#1. The cd Command
+- No Arguments
+```
+[user@sahara ~/lecture1/messages]$ cd
+[user@sahara ~]$ 
+```
+Before the commmand was run, the working directory was /lecture1/messages. When the cd command is run with no arguments, it changes the working directory back to the home directory, which is exactly
+what happened. This is not an error. 
+
+- Directory as an Argument
+```
+[user@sahara ~/lecture1]$ cd messages
+[user@sahara ~/lecture1/messages]$ 
+```
+Before the command was run, the working directory was /lecture1. When the cd command was run, it changed the working directory to /lecture1/messages, since messages is a subdirectory in the lecture1 
+directory. This is not an error. 
+
+- File as an argument
+```
+[user@sahara ~/lecture1/messages]$ cd en-us.txt
+bash: cd: en-us.txt: Not a directory
+```
+Before the command was run, the working directory was /lecture1/messages. When the cd command was run, the line `bash: cd: en-us.txt: Not a directory` was printed to the console, since the cd 
+command is meant to take in a directory as an argument, but a file was written instead. This is an error - the cd command is meant to change the working directory, and the idea of changing the 
+working directory to a file is nonsensical. 
+
+#2. The ls command
