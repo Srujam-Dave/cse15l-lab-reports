@@ -55,8 +55,9 @@ messageParameters contain the parts used to process the message.
 
 In this case, the URL path is /add-message, and the query is "?s=world&user=hello", which leads to the text "hello: world" being added to message and displayed to the user.
 
-- Screenshot 2: 
+- Screenshot 2:
 ![Screenshot 2](./lab2sc2.png)
+
 The majority of the program is the same after the second URL was called - the main method is still running, and the start method has still launched the server using the same port number and
 ChatHandler object. However, the URL has changed, with the query now being "?s=bar&user=foo". This changes the elements in query, messageParameters, and userNameParameters, and leads to the text
 "foo: bar" being added to the message field and the text that is displayed to the user.
