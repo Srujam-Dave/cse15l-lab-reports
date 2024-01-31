@@ -1,6 +1,7 @@
 # Lab Report 2
 ### Part 1
-- Code for ChatServer: \n
+- Code for ChatServer:
+
 
 ```
 import java.io.IOException;
