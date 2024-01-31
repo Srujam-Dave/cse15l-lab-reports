@@ -63,3 +63,15 @@ ChatHandler object. However, the URL has changed, with the query now being "?s=b
 "foo: bar" being added to the message field and the text that is displayed to the user.
 
 ### Part 2
+![Screenshot 3](./lab2sc3.png)
+![Screenshot 4](./lab2sc4.png)
+
+The first screenshot shows the location of the public key while logged into ieng6, while the second shows the location of the private key while logged into
+my own computer. Together, the public and private key allow ieng6 to identify me so that I don't have to type in my password while logging in. 
+
+### Part 3
+One thing I learned over the past two weeks was how programs use URLs to display information on webpages. While I knew how file paths worked, I never
+considered that the text in the URL of a browser worked in a very similar way. Furthermore, I had no idea what servers where, but I now understand that
+they're programs that communicate with other computers to send information back and forth. Furthermore, I now have a better understanding of what queries
+are in website URLs and how they can play an important role in how information is displayed. This is especially true after writing the programs that 
+mimicked the behavior of search engines and online forums. 
