@@ -1,7 +1,6 @@
 # Lab Report 2
 ### Part 1
-- Code for ChatServer:
-
+- Code for ChatServer: /n
 
 ```
 import java.io.IOException;
@@ -31,7 +30,6 @@ class ChatHandler implements URLHandler {
         return "404 Not Found!";
     }
 }
-
 class ChatServer {
     public static void main(String[] args) throws IOException {
         if(args.length == 0){
@@ -45,6 +43,8 @@ class ChatServer {
     }
 }
 ```
+
+
 - Screenshot 1:
 ![Screenshot 1](./lab2sc1.png)
 
