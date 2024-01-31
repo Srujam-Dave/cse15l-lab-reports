@@ -1,6 +1,8 @@
 # Lab Report 2
 ### Part 1
 - Code for ChatServer:
+
+
 ```
 import java.io.IOException;
 import java.net.URI;
