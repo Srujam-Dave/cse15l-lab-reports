@@ -81,3 +81,105 @@ a new array instead of modifying the original array, and secondly, because the d
 `reversed` places the elements of `arr` in `newArray` in reverse order, then returns `newArray`, which is correct. 
 
 ### Part 2: Researching Commands
+- Command: The find command
+
+- 1st Flag: -user
+
+The `-user` flag modifies the output of the find command so that it only outputs the files owned by a certain user.
+
+Source: Biswas, Supriyo. “A Guide to the Linux ‘Find’ Command.” Boolean World, 9 May 2018, www.booleanworld.com/guide-linux-find-command/. 
+
+Example 1: 
+```
+srujamdave@penguin:~/docsearch$ find technical/biomed -user srujamdave
+technical/biomed
+technical/biomed/1468-6708-3-1.txt
+technical/biomed/1468-6708-3-10.txt
+technical/biomed/1468-6708-3-3.txt
+technical/biomed/1468-6708-3-4.txt
+technical/biomed/1468-6708-3-7.txt
+...
+```
+
+Example 2:
+```
+srujamdave@penguin:~/docsearch$ find technical/plos -user srujamdave
+technical/plos
+technical/plos/journal.pbio.0020001.txt
+technical/plos/journal.pbio.0020010.txt
+technical/plos/journal.pbio.0020012.txt
+technical/plos/journal.pbio.0020013.txt
+technical/plos/journal.pbio.0020019.txt
+technical/plos/journal.pbio.0020028.txt
+technical/plos/journal.pbio.0020035.txt
+technical/plos/journal.pbio.0020040.txt
+technical/plos/journal.pbio.0020042.txt
+technical/plos/journal.pbio.0020043.txt
+technical/plos/journal.pbio.0020046.txt
+```
+
+- 2nd Flag: -size
+
+The `-size` flag limits the output of the find command to files above or below a certain size. The size can be specified in bytes, kilobytes, gigabytes,
+or megabytes. For example, `10c` looks for files over ten bytes, `5G` looks for files over 5 gigabytes, and `1k` looks for files over a kilobyte.
+
+Source: Biswas, Supriyo. “A Guide to the Linux ‘Find’ Command.” Boolean World, 9 May 2018, www.booleanworld.com/guide-linux-find-command/. 
+
+Example 1: 
+```
+srujamdave@penguin:~/docsearch$ find technical/biomed -size 11k
+technical/biomed/1471-2156-2-8.txt
+technical/biomed/1471-230X-2-17.txt
+technical/biomed/1471-2350-2-8.txt
+```
+
+Example 2: 
+```
+srujamdave@penguin:~/docsearch$ find technical/plos -size 10k
+technical/plos
+technical/plos/journal.pbio.0020042.txt
+technical/plos/journal.pbio.0020073.txt
+technical/plos/journal.pbio.0020156.txt
+technical/plos/journal.pbio.0020215.txt
+technical/plos/journal.pbio.0020224.txt
+technical/plos/journal.pbio.0020297.txt
+technical/plos/journal.pbio.0030131.txt
+technical/plos/pmed.0020005.txt
+technical/plos/pmed.0020075.txt
+```
+
+- 3rd Flag: -name
+
+This flag filters the output of the find command by the names of the files that are passed in.
+
+Source: Biswas, Supriyo. “A Guide to the Linux ‘Find’ Command.” Boolean World, 9 May 2018, www.booleanworld.com/guide-linux-find-command/. 
+
+Example 1: 
+```
+srujamdave@penguin:~/docsearch$ find technical/biomed -name '1471-2350-2-8.txt'
+technical/biomed/1471-2350-2-8.txt
+```
+
+Example 2: 
+```
+srujamdave@penguin:~/docsearch$ find technical/plos -name 'journal.pbio.0030131.txt'
+technical/plos/journal.pbio.0030131.txt
+```
+
+- 4th Flag: -empty
+
+This flag filters the output of the find command such that it only outputs empty files.
+
+Source: Biswas, Supriyo. “A Guide to the Linux ‘Find’ Command.” Boolean World, 9 May 2018, www.booleanworld.com/guide-linux-find-command/. 
+
+Example 1: 
+```
+srujamdave@penguin:~/docsearch$ find technical/plos -empty
+technical/plos/empty-example-file-i-made.txt
+```
+
+Example 2:
+```
+srujamdave@penguin:~/docsearch$ find technical/biomed -empty
+technical/biomed/another-emmpty-example-file.txt
+```
