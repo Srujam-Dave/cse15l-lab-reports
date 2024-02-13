@@ -23,7 +23,8 @@ public void testReservedZero() {
   assertArrayEquals(new int[]{0}, output1);
 }
 ```
-- Failed Test Symptoms: 
+- Failed Test Symptoms:
+
 ```
 ArrayTests.java:27: error: method testReservedNotEmpty() is already defined in class ArrayTests
   public void testReservedNotEmpty() {
