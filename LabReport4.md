@@ -1,4 +1,4 @@
-# Lab Report 3
+# Lab Report 4
 
 ## Step 4: Log into ieng6
 
@@ -20,12 +20,36 @@ click.
 
 ## Step 6: Run Tests
 
-![Screenshot 2](./LabReport4sc2.png)
+![Screenshot 3](./LabReport4sc3.png)
+
+Keys Pressed: `<up> <up> <up> <up> <up> <up> <enter>` 
+
+The `bash grade.sh` command was six slots in history upwards, so I pressed the up key six times and pressed enter. This command is the `bash test.sh` command, which runs a bash script that runs
+the JUnit test cases for the ListExamples.java file. The second test did not pass. 
 
 ## Step 7: Edit Code
 
+![Screenshot 4](./LabReport4sc4.png)
+![Screenshot 4.5](./LabReport4sc4andahalf.png)
 
+Keys Pressed: `vim ListExamples.java :44 e r2 :wq'
 
-## Step 8: Commit and Push Change
+The command `vim ListExamples.java` opens up the ListExamples.java file in vim. The `:44` command takes the cursor to the 44th line, where the error is. The `e` takes the cursor to the end of the 
+first word in the line, which is what needs to be replaced.`r2` replaces the last character in that word with a 2. Finally, `:wq` exits vim.
 
+## Step 8: Run Tests
 
+![Screenshot 5](./LabReport4sc5.png)
+
+Keys Pressed: `<up> <up> <up> <up> <up> <up> <enter>` 
+
+The `bash grade.sh` command was six slots in history upwards, so I pressed the up key six times and pressed enter. This command is the `bash test.sh` command, which runs a bash script that runs
+the JUnit test cases for the ListExamples.java file. This time, every test passed.
+
+## Step 9: Commit and Push Change
+
+![Screenshot 6](./LabReport4sc6.png)
+
+Keys Pressed: `<up> <up> <up> <up> <up> <up> <enter> <up> <up> <up> <up> <up> <up> <enter>`
+The `git add ListExamples.java` and `git commit` commands both were six commands up in the history, so to pull up and run each command, I pressed `<up>` six times and pressed `<enter>`. The `git add`
+and `git commit` commands together tell git that ListExamples.java needs to be added to the git repository, then commit the changes made to the file to the git repository. 
