@@ -6,8 +6,8 @@
 
 Keys Pressed: `<up> <enter>` 
 
-The `ssh srdave@ieng6.ucsd.edu` command was one step up in history, so I pressed the `up` key once and pressed enter. This command logs me into the ieng6 server so I can do the rest of the assignment
-on that server. 
+The `ssh srdave@ieng6.ucsd.edu` command was one step up in history, so I pressed the `up` key once and pressed enter. This command logs me into the ieng6 
+server so I can do the rest of the assignment on that server. 
 
 ## Step 5: Clone Fork of Repository
 
@@ -15,27 +15,30 @@ on that server.
 
 Keys Pressed: `git clone <right click>`
 
-The 'git clone git@github.com:Srujam-Dave/lab7.git' command clones the git repo with all the necessary files to the ssh server. I typed in `git clone` manually and pasted the SSH URL using a right 
-click.
+The `git clone git@github.com:Srujam-Dave/lab7.git` command clones the git repo with all the necessary files to the ssh server. I typed in `git clone` 
+manually and pasted the SSH URL using a right click. Finally, I pressed `<enter>` to make the command run, thus cloning the repository at the URL to the
+ieng6 server.
 
 ## Step 6: Run Tests
 
 ![Screenshot 3](./LabReport4sc3.png)
 
-Keys Pressed: `<up> <up> <up> <up> <up> <up> <enter>` 
+Keys Pressed: `cd lab7 <enter> <up> <up> <up> <up> <up> <up> <enter>` 
 
-The `bash grade.sh` command was six slots in history upwards, so I pressed the up key six times and pressed enter. This command is the `bash test.sh` command, which runs a bash script that runs
-the JUnit test cases for the ListExamples.java file. The second test did not pass. 
+First, I typed in the keys `cd lab7` and pressed `<enter>`, which moves me into `./lab7`,the directory created when I cloned the git repository. The 
+`bash test.sh` command was six slots in history upwards, so I pressed the up key six times and pressed enter. This command runs a bash script that runs the
+JUnit test cases for the ListExamples.java file. The second test did not pass. 
 
 ## Step 7: Edit Code
 
 ![Screenshot 4](./LabReport4sc4.png)
 ![Screenshot 4.5](./LabReport4sc4andahalf.png)
 
-Keys Pressed: `vim ListExamples.java :44 e r2 :wq'
+Keys Pressed: `vim ListExamples.java :44 e r2 :wq`
 
-The command `vim ListExamples.java` opens up the ListExamples.java file in vim. The `:44` command takes the cursor to the 44th line, where the error is. The `e` takes the cursor to the end of the 
-first word in the line, which is what needs to be replaced.`r2` replaces the last character in that word with a 2. Finally, `:wq` exits vim.
+The command `vim ListExamples.java` opens up the ListExamples.java file in vim. The `:44` command takes the cursor to the 44th line, where the error is. 
+The `e` takes the cursor to the end of the first word in the line, which is what needs to be replaced.`r2` replaces the last character in that word with 
+a 2. Finally, `:wq` exits vim.
 
 ## Step 8: Run Tests
 
@@ -43,8 +46,8 @@ first word in the line, which is what needs to be replaced.`r2` replaces the las
 
 Keys Pressed: `<up> <up> <up> <up> <up> <up> <enter>` 
 
-The `bash grade.sh` command was six slots in history upwards, so I pressed the up key six times and pressed enter. This command is the `bash test.sh` command, which runs a bash script that runs
-the JUnit test cases for the ListExamples.java file. This time, every test passed.
+The `bash grade.sh` command was six slots in history upwards, so I pressed the up key six times and pressed enter. This command is the `bash test.sh` 
+command, which runs a bash script that runs the JUnit test cases for the ListExamples.java file. This time, every test passed.
 
 ## Step 9: Commit and Push Change
 
