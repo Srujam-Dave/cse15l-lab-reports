@@ -25,7 +25,7 @@ ieng6 server.
 
 Keys Pressed: `cd lab7 <enter> <up> <up> <up> <up> <up> <up> <up> <enter>` 
 
-First, I typed in the keys `cd lab7` and pressed `<enter>`, which moves me into `./lab7`,the directory created when I cloned the git repository. The 
+First, I typed in the keys `cd lab7` and pressed `<enter>`, which moves me into `./lab7`, the directory created when I cloned the git repository. The 
 `bash test.sh` command was seven slots in history upwards, so I pressed the up key seven times and pressed enter. This command runs a bash script that runs
 the JUnit test cases for the ListExamples.java file. The second test did not pass. 
 
@@ -39,7 +39,7 @@ Keys Pressed: `vim ListExamples.java <enter> :44 <enter> e r2 :wq <enter>`
 First, I manually typed in the command `vim ListExamples.java` and pressed enter. This command opens up the ListExamples.java file in vim. The 
 `:44` command, which I also ran by manually typing it in and pressing enter, takes the cursor to the 44th line, where the error is. The `e` takes the 
 cursor to the end of the first word in the line, which is what needs to be replaced.`r2` replaces the last character in that word with a 2, making the 
-contents of the line `index2 += 1', which should fix the infinite loop found in the test. Finally, `:wq <enter>` saves the file and exits vim.
+contents of the line `index2 += 1`, which should fix the infinite loop found in the test. Finally, `:wq <enter>` saves the file and exits vim.
 
 ## Step 8: Run Tests
 
